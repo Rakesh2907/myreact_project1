@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Simple react app",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "react-router": "^2.0.0"
+  }
+}
