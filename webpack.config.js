@@ -1,6 +1,6 @@
 var config = {
    entry: './bundle.js',
-	
+
    output: {
       path:__dirname,
       filename: 'index.js',
@@ -19,24 +19,20 @@ var config = {
 	   },
 	   extensions: ['','.js','.jsx']
    },
-   devServer: {
-      inline: true,
-      port: 2020
-   },
-	
    module: {
       loaders: [
          {
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel-loader',
-				
+
             query: {
                presets: ['es2015', 'react', 'stage-0']
             }
          }
       ]
-   }
+   },
+   devtool: 'cheap-module-eval-source-map'
 }
 
 module.exports = config;
